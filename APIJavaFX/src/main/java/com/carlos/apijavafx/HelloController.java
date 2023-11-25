@@ -71,12 +71,10 @@ public class HelloController implements Initializable {
         }
         asociarElementos();
 
-        // Agrega un ChangeListener al mainListView
         mainListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Coctel>() {
             @Override
             public void changed(ObservableValue<? extends Coctel> observable, Coctel oldValue, Coctel newValue) {
                 if (newValue != null) {
-                    // Cuando se selecciona un nuevo coctel, establece la imagen en viewImage
                     Image image = new Image(newValue.getImage());
                     viewImage.setImage(image);
                 }
