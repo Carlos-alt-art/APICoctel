@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1380.0" style="-fx-background-image: url('/fondo.png'); -fx-background-size: cover; " xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carlos.apijavafx.HelloController">
+   <children>
+      <ChoiceBox fx:id="mainChoiceBox" layoutX="195.0" layoutY="301.0" prefHeight="25.0" prefWidth="792.0" />
+      <ListView fx:id="mainListView" layoutX="195.0" layoutY="335.0" prefHeight="200.0" prefWidth="792.0" />
+      <Button fx:id="btnAleatorio" layoutX="338.0" layoutY="541.0" mnemonicParsing="false" onAction="#generarCoctelAleatorio" prefHeight="52.0" prefWidth="192.0" style="-fx-font-weight: bold;" text="Generar Coctel Aleatorio" textAlignment="CENTER" />
+      <ImageView fx:id="viewImage" fitHeight="150.0" fitWidth="200.0" layoutX="530.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnCategoria" layoutX="594.0" layoutY="541.0" mnemonicParsing="false" onAction="#generarPorCategoria" prefHeight="52.0" prefWidth="192.0" style="-fx-font-weight: bold;" text="Generar Coctel Por Categoria" textAlignment="CENTER" />
+      <TextField fx:id="textFieldBuscar" layoutX="264.0" layoutY="268.0" onKeyReleased="#onKeyFiltar" style="-fx-font-weight: bold;" />
+      <Label layoutX="197.0" layoutY="272.0" prefHeight="17.0" prefWidth="57.0" text="Buscar" textFill="WHITE" />
+   </children>
+</Pane>
